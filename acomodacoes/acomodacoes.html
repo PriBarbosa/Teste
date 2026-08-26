@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -20,44 +21,58 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-  
+
 </head>
 
 <body>
-    <header>
-        <div>
-            <div class="container">
-                <a class="logo" href="../index.html">
-                    <img src="../imagens/logo-sitio.jpg" width="110" height="95">
+    <header class="site-header" aria-label="Cabeçalho do Sítio Olho D'Água">
+
+        <div class="container container-header">
+
+            <a class="logo" href="../index.html" aria-label="Página inicial do Sítio Olho D'Água">
+
+                <img src="../imagens/logo-sitio.jpg" alt="Logotipo do Sítio Olho D'Água" width="110" height="95">
+
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+
+                <a href="../acomodacoes/acomodacoes.html">
+                    Nossas Acomodações
                 </a>
 
-                <div class="menu">
-                    <nav>
-                        <a href="../acomodacoes/acomodacoes.html">Nossas Acomodações</a>
-                        <a href="../contatos/contatos.html">Contato</a>
-                        <a href="../reserva/reserva.html">Reserva</a>
-                    </nav>
-                </div>
-                <div class="socias">
-                    <button><a href="http://wa.me/+5535998524228" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a></button>
-                    <button><a href="http://www.instagram.com/sitio_olho_daguastl?igsh=MXg1a2pheG82cTNpdw=="
-                            target=" _blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a></button>
-                    <button><a href="mailto:priscilabarbosa1510@gmail.com" target="_blank">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a></button>
+                <a href="../reserva/reserva.html">
+                    Reservas
+                </a>
 
+            </nav>
 
+            <div class="redes-sociais" aria-label="Redes sociais">
 
-                </div>
+                <a class="botao-social" href="http://wa.me/+5535998524228" target="_blank" rel="noopener noreferrer"
+                    aria-label="WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+                <a class="botao-social" href="http://www.instagram.com/sitio_olho_daguastl?igsh=MXg1a2pheG82cTNpdw=="
+                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a class="botao-social" href="mailto:priscilabarbosa1510@gmail.com" aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
 
             </div>
 
-
         </div>
+
     </header>
     <main>
 
@@ -66,28 +81,29 @@
             <div class="carousel-text">
                 <h1>Chalé Ipê Amarelo <br> Um refúgio aconchegante para casais</h1>
                 <p>
-                    Imagina acordar ao som dos pássaros e sentir o frescor do ar puro das montanhas. O Chalé Ipê Amarelo
-                    é o refúgio perfeito para quem busca romance e tranquilidade em meio à natureza. Desfrute do
-                    aconchego em cada detalhe e deixe-se envolver pelo charme mineiro. <br>
-                    Descubra o encanto do Chalé Ipê Amarelo, um espaço projetado especialmente para casais que buscam
-                    momentos de tranquilidade e romantismo. Equipado com tudo o que você precisa para uma estadia
-                    confortável, o chalé oferece utensílios básicos para o preparo de refeições práticas, roupa de cama
-                    completa, TV e Wi-Fi para que você se sinta em casa, mas cercado pela natureza.
+                    Imagine acordar ao som dos pássaros, respirar o ar puro das montanhas e aproveitar momentos de
+                    tranquilidade em meio à natureza.
+
+                    O Chalé Ipê Amarelo foi pensado para casais que desejam descansar, aproveitar o clima de São Thomé
+                    das Letras e viver uma experiência especial no campo.
+
+                    Um ambiente acolhedor, cercado pela natureza e com aquele charme mineiro que torna a estadia ainda
+                    mais especial.
                 </p>
             </div>
 
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"
-                style="width: 400px; margin: 0 auto;">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="../imagens/chale-ipe/chale-ipe-amarelo.jpg" class="d-block w-100" alt="Imagem Chalé Amarelo">
+                        <img src="/imagens/chale-ipe/chale-ipe-amarelo.png" class="d-block w-100"
+                            alt="Imagem Chalé Amarelo">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="../imagens/chale-ipe/cama-ipe.jpeg" class="d-block w-100"
+                        <img src="/imagens/chale-ipe/cama-ipe.jpeg" class="d-block w-100"
                             alt="Imagem Mezanino com cama">
                     </div>
                     <div class="carousel-item">
-                        <img src="../imagens/atracoes/por-do-sol.jpg" class="d-block w-100" alt="Imagem pôr do sol">
+                        <img src="" class="d-block w-100" alt="">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -105,29 +121,29 @@
         <div class="carousel-container">
             <div class="carousel-text">
                 <h1>Chalé Quaresmeira <br> O espaço perfeito para famílias e grupos</h1>
-                <p> Perfeito para criar memórias inesquecíveis com sua família ou grupo de amigos, o Chalé Quaresmeira
-                    oferece espaço, conforto e uma conexão única com a natureza. Venha viver momentos de harmonia e
-                    descontração neste recanto especial.
-                    Se você está planejando momentos especiais com a família ou amigos, o Chalé Quaresmeira é a escolha
-                    ideal! Este espaço amplo e acolhedor acomoda até oito pessoas, com um quarto exclusivo para casais e
-                    um
-                    mezanino que oferece conforto com duas camas de casal e duas de solteiro. Perfeito para compartilhar
-                    histórias e vivências em um ambiente harmonioso.</p>
+                <p> Um espaço amplo e acolhedor para reunir a família ou os amigos e aproveitar São Thomé das Letras com
+                    tranquilidade.
+
+                    O Chalé Quaresmeira combina o conforto de uma hospedagem espaçosa com a experiência de estar em meio
+                    à natureza.
+
+                    É o lugar ideal para desacelerar, compartilhar momentos, conversar, descansar e criar boas
+                    lembranças juntos.</p>
 
             </div>
 
-            <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel"
-                style="width: 400px; margin: 0 auto;">
+            <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="../imagens/chale-quaresmeira/chale-quaresmeira.jpeg" class="d-block w-100" alt="Imagem Chalé Familiar">
+                        <img src="/imagens/chale-quaresmeira/quaresmeir-1.jpg" class="d-block w-100"
+                            alt="Imagem Chalé Familiar">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="../imagens/chale-quaresmeira/mezanino-quaresmeira.jpg" class="d-block w-100"
+                        <img src="/imagens/chale-quaresmeira/quaresmeira-2.jpg" class="d-block w-100"
                             alt="Imagem Mezanino Familiar">
                     </div>
                     <div class="carousel-item">
-                        <img src="../imagens/chale-quaresmeira/quarto-quaresmeira.jpg" class="d-block w-100"
+                        <img src="/imagens/chale-quaresmeira/mezanino-quaresmeira.jpg" class="d-block w-100"
                             alt="Imagem Quarto Casal">
                     </div>
                 </div>
@@ -143,6 +159,150 @@
                 </button>
             </div>
         </div>
+
+
+
+        <!-- =========================
+     CASA COM VISTA PARA O PARQUE
+========================== -->
+        <div class="carousel-container">
+
+            <div class="carousel-text">
+
+                <h1>
+                    Casa com vista para o parque
+                    <br>
+                    Conforto e praticidade no coração de São Thomé
+                </h1>
+
+                <p>
+                    Uma opção acolhedora para quem deseja aproveitar a cidade com praticidade e ficar próximo das
+                    principais atrações da região central.
+
+                    A casa oferece uma experiência diferente das hospedagens rurais do Sítio: aqui, o destaque é a
+                    localização e a vista para o Parque Antônio Rosa.
+
+                    É uma ótima escolha para quem chega de ônibus, deseja explorar a cidade a pé e procura um espaço
+                    confortável para aproveitar São Thomé das Letras.
+                </p>
+
+
+                <p>
+                    🚌 É uma ótima opção para quem chega de ônibus,
+                    pois estamos a aproximadamente
+                    <strong>5 minutos a pé da rodoviária</strong>.
+                </p>
+
+                <p>
+                    🚗 A hospedagem não possui estacionamento próprio.
+                </p>
+
+            </div>
+
+
+            <div id="carouselCasa" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+
+                        <img src="../imagens/casa-vista/casa-vista.png" class="d-block w-100"
+                            alt="Casa com vista para o Parque Antônio Rosa">
+
+                    </div>
+
+                    <!-- Segunda foto da casa -->
+                    <div class="carousel-item" data-bs-interval="5000">
+
+                        <img src="../imagens/casa-vista/casa-vista-2.jpg" class="d-block w-100"
+                            alt="Vista da Casa com vista para o parque">
+
+                    </div>
+
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCasa" data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+
+                </button>
+
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCasa" data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="visually-hidden">
+                        Próximo
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+    
+        <section class="localizacao">
+
+            <div class="localizacao-card">
+
+                <div class="localizacao-conteudo">
+
+                    <h2>📍 Onde estamos?</h2>
+
+                    <p>
+                        O <strong>Sítio Olho D'Água</strong> possui hospedagens
+                        em diferentes pontos de São Thomé das Letras, cada uma
+                        com uma experiência especial.
+                    </p>
+
+                    <div class="localizacao-item">
+
+                        <h3>🌿 Chalés Ipê Amarelo e Quaresmeira</h3>
+
+                        <p>
+                            Os dois chalés estão localizados no
+                            <strong>Vale do Canta Galo</strong>, em meio à natureza,
+                            aproximadamente 1 km da Cachoeira da Lua e 6 km do
+                            centro de São Thomé das Letras.
+                        </p>
+
+                        <a href="https://www.google.com/maps/place/Sitio+Olho+D'agua/@-21.710436,-44.94483,16z"
+                            class="botao-localizacao" target="_blank" rel="noopener noreferrer">
+                            📍 Ver localização dos chalés
+                        </a>
+
+                    </div>
+
+                    <div class="localizacao-item">
+
+                        <h3>🏡 Casa com vista para o parque</h3>
+
+                        <p>
+                            A casa está localizada próxima ao centro de
+                            <strong>São Thomé das Letras</strong>, com vista para o
+                            <strong>Parque Antônio Rosa</strong> e aproximadamente
+                            5 minutos a pé da rodoviária.
+                        </p>
+
+                        <a href="#" class="botao-localizacao" target="_blank" rel="noopener noreferrer">
+                            📍 Ver localização da casa
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        ```
+
     </main>
 
     <footer>

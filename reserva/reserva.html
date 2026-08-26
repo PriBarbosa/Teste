@@ -24,87 +24,135 @@
     <script src="../js/reserva.js"></script>
 </head>
 
-<body>
-    <header>
 
-        <div class="container">
-            <a class="logo" href="../index.html">
-                <img src="../imagens/logo-sitio.jpg" width="110" height="95">
+<body>
+    <header class="site-header" aria-label="Cabeçalho do Sítio Olho D'Água">
+
+        <div class="container container-header">
+
+            <a class="logo" href="../index.html" aria-label="Página inicial do Sítio Olho D'Água">
+
+                <img src="../imagens/logo-sitio.jpg" alt="Logotipo do Sítio Olho D'Água" width="110" height="95">
+
             </a>
 
+            <nav class="menu" aria-label="Menu principal">
 
-            <div class="menu">
-                <nav>
-                    <a href="../acomodacoes/acomodacoes.html">Nossas Acomodações</a>
-                    <a href="../contatos/contatos.html">Contato</a>
-                    <a href="../reserva/reserva.html">Reserva</a>
-                </nav>
-            </div>
-            <div class="socias">
-                <button><a href="http://wa.me/+5535998524228" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a></button>
-                <button><a href="http://www.instagram.com/sitio_olho_daguastl?igsh=MXg1a2pheG82cTNpdw=="
-                        target=" _blank">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a></button>
-                <button><a href="mailto:priscilabarbosa1510@gmail.com" target="_blank">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a></button>
+                <a href="../acomodacoes/acomodacoes.html">
+                    Nossas Acomodações
+                </a>
 
+                <a href="../reserva/reserva.html">
+                    Reservas
+                </a>
 
+            </nav>
+
+            <div class="redes-sociais" aria-label="Redes sociais">
+
+                <a class="botao-social" href="http://wa.me/+5535998524228" target="_blank" rel="noopener noreferrer"
+                    aria-label="WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+                <a class="botao-social" href="http://www.instagram.com/sitio_olho_daguastl?igsh=MXg1a2pheG82cTNpdw=="
+                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a class="botao-social" href="mailto:priscilabarbosa1510@gmail.com" aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
 
             </div>
 
         </div>
 
-
-        </div>
     </header>
     <div class="reserva">
 
         <main class="inicio">
-            <h1>Informação sobre Valores e Reservas</h1>
-            <p>Os valores para reservas feitas pelo aplicativo Airbnb podem variar em relação aos valores praticados
-                diretamente com a pousada. Isso ocorre porque o Airbnb inclui taxas adicionais, como taxas de serviço e
-                limpeza, que não estão presentes nas reservas feitas diretamente conosco.
+            <h1>Informações sobre Valores e Reservas</h1>
 
-                Ao reservar diretamente com a pousada, você pode contar com valores mais acessíveis, além de condições
-                especiais de pagamento e atendimento personalizado para esclarecer qualquer dúvida sobre sua estadia.
-
-                Recomendamos que entre em contato diretamente conosco para obter o melhor custo-benefício e garantir uma
-                experiência ainda mais agradável em nossos chalés.
-
+            <p>
+                Os valores para reservas feitas pelo aplicativo Airbnb podem variar
+                em relação aos valores praticados diretamente com a pousada.
+                Isso ocorre porque o Airbnb inclui taxas adicionais, como taxas
+                de serviço e limpeza, que não estão presentes nas reservas feitas
+                diretamente conosco.
             </p>
 
+            <p>
+                Ao reservar diretamente com a pousada, você pode contar com
+                valores mais acessíveis, além de condições especiais de pagamento
+                e atendimento personalizado para esclarecer qualquer dúvida
+                sobre sua estadia.
+            </p>
+
+            <p>
+                Recomendamos que entre em contato diretamente conosco para obter
+                o melhor custo-benefício e garantir uma experiência ainda mais
+                agradável em nossos chalés.
+            </p>
         </main>
-        <div class="card" style="width: 18rem;">
-            <img src="../imagens/chale-ipe/chale-ipe-amarelo.jpg" class="card-img-top" alt="imagem chalé para casal"
-                height="150px">
-            <div class="card-body">
-                <h5 class="card-title">Chalé Ipé Amarelo</h5>
-                <p class="card-text">Um refúgio perfeito para casais que buscam romantismo e sossego. Desfrute do
-                    conforto da vida no campo, cercado pela natureza exuberante e com uma vista incrível.
 
-                </p>
-                <a href="//www.airbnb.com.br/rooms/45503239?viralityEntryPoint=1&s=76" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-primary">Resevar</a>
+        <div class="cards-hospedagens">
+            <div class="card" style="width: 18rem;">
+                <img src="/imagens/chale-ipe/chale-ipe-amarelo.png" class="card-img-top" alt="imagem chalé para casal"
+                    height="150px">
+                <div class="card-body">
+                    <h5 class="card-title">Chalé Ipé Amarelo</h5>
+                    <p class="card-text">Um refúgio perfeito para casais que buscam romantismo e sossego. Desfrute do
+                        conforto da vida no campo, cercado pela natureza exuberante e com uma vista incrível.
+
+                    </p>
+                    <a href="//www.airbnb.com.br/rooms/45503239?viralityEntryPoint=1&s=76" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-primary">Reservar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../imagens/chale-quaresmeira/quaresmeir-1.jpg" class="card-img-top"
+                    alt="imagem chalé para familia ou grupo" height="150px">
+                <div class="card-body">
+                    <h5 class="card-title">Chalé Quaresmeira</h5>
+                    <p class="card-text">Espaçoso e acolhedor, ideal para famílias ou grupos de até 8 pessoas. Viva
+                        momentos
+                        únicos com seus entes queridos, em um ambiente tranquilo e equipado para o seu conforto.</p>
+                    <a href="http://www.airbnb.com.br/rooms/35729175?viralityEntryPoint=1&s=76" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-primary">Reservar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../imagens/casa-vista/casa-vista.png" class="card-img-top"
+                    alt="Casa com vista para o Parque Antônio Rosa" height="150px">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Casa com vista para o parque
+                    </h5>
+
+                    <p class="card-text">
+                        Uma opção confortável e acolhedora para até 2 pessoas,
+                        localizada no coração de São Thomé das Letras, com vista
+                        para o Parque Antônio Rosa. Ideal para quem busca
+                        praticidade, conforto e proximidade do centro.
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        Reservar
+                    </a>
+
+                </div>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imagens/chale-quaresmeira/chale-quaresmeira.jpeg" class="card-img-top" alt="imagem chalé para familia ou grupo"
-                height="150px">
-            <div class="card-body">
-                <h5 class="card-title">Chalé Quaresmeira</h5>
-                <p class="card-text">Espaçoso e acolhedor, ideal para famílias ou grupos de até 8 pessoas. Viva momentos
-                    únicos com seus entes queridos, em um ambiente tranquilo e equipado para o seu conforto.</p>
-                <a href="http://www.airbnb.com.br/rooms/35729175?viralityEntryPoint=1&s=76" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-primary">Resevar</a>
-            </div>
-        </div>
-
     </div>
-
     <footer>
         <p><strong>Localização:</strong> Estrada São Thomé - Sobradinho Km 6, São Thomé das Letras - MG</p>
         <p>© 2025 Sítio Olho D'Água. Todos os direitos reservados.</p>

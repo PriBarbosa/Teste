@@ -14,133 +14,198 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <div class="container">
-                <a class="logo" href="../index.html">
-                    <img src="../imagens/logo-sitio.jpg" width="110" height="95">
+    <header class="site-header" aria-label="Cabeçalho do Sítio Olho D'Água">
+
+        <div class="container container-header">
+
+            <a class="logo" href="../index.html" aria-label="Página inicial do Sítio Olho D'Água">
+
+                <img src="../imagens/logo-sitio.jpg" alt="Logotipo do Sítio Olho D'Água" width="110" height="95">
+
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+
+                <a href="../acomodacoes/acomodacoes.html">
+                    Nossas Acomodações
                 </a>
-                <div class="menu">
-                    <nav>
-                        <a href="../acomodacoes/acomodacoes.html">Nossas Acomodações</a>
-                        <a href="Contatos.html">Contatos</a>
-                        <a href="../reserva/reserva.html">Reserva</a>
-                    </nav>
-                </div>
-                <div class="socias">
-                    <button><a href="http://wa.me/+5535998524228" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a></button>
-                    <button><a href="http://www.instagram.com/sitio_olho_daguastl?igsh=MXg1a2pheG82cTNpdw=="
-                            target=" _blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a></button>
-                    <button><a href="mailto:priscilabarbosa1510@gmail.com" target="_blank">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a></button>
 
+                <a href="../contatos/contatos.html">
+                    Contatos
+                </a>
 
+                <a href="../reserva/reserva.html">
+                    Reservas
+                </a>
 
-                </div>
+            </nav>
+
+            <div class="redes-sociais" aria-label="Redes sociais">
+
+                <a class="botao-social" href="http://wa.me/+5535998524228" target="_blank" rel="noopener noreferrer"
+                    aria-label="WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+                <a class="botao-social" href="http://www.instagram.com/sitio_olho_daguastl?igsh=MXg1a2pheG82cTNpdw=="
+                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+                <a class="botao-social" href="mailto:priscilabarbosa1510@gmail.com" aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
 
             </div>
-
 
         </div>
+
     </header>
-    <main>
-        <section class="chalets-section">
-            <h1 class="titulo">Prepare-se para uma experiência inesquecível!</h1>
-            <p>Imagine-se cercado por montanhas, o ar puro da natureza e uma estadia repleta de conforto e
-                tranquilidade. No <strong>Sítio Olho D'Água</strong>, cada momento é uma conexão única com a paz e a
-                beleza de São Thomé das Letras.</p>
-            <div class="simuladores">
-                <!-- Chalé Ipê Amarelo -->
-                <div class="simulador">
-                    <h3>🌟 Chalé Ipê Amarelo</h3>
-                    <img src="../imagens/chale-ipe/chale-ipe-amarelo.jpg" alt="Chalé Ipê Amarelo" width="275">
-                    <p>Perfeito para casais, o Chalé Ipê Amarelo combina um ambiente acolhedor com um
-                        toque rústico e vistas espetaculares. Ideal para relaxar e criar memórias inesquecíveis.</p>
-                    <label for="checkin1">Data de Check-in:</label>
-                    <input type="date" id="checkin1">
-                    <label for="checkout1">Data de Check-out:</label>
-                    <input type="date" id="checkout1">
-                    <button
-                        onclick="calcularDiaria('chale1', 'checkin1', 'checkout1', 'resultado1', null)">Calcular</button>
-                    <div id="resultado1" class="resultado">Valor à pagar</div>
-                </div>
+    <main class="contatos">
 
-                <!-- Chalé Quaresmeira -->
-                <div class="simulador">
-                    <h3>🌺 Chalé Quaresmeira</h3>
-                    <img src="../imagens/chale-quaresmeira/chale-quaresmeira.jpeg" alt="Chalé Quaresmeira" width="275">
-                    <p>Ideal para famílias e grupos maiores, o Chalé Quaresmeira oferece espaço e conforto em harmonia
-                        com a
-                        natureza. Aproveite momentos únicos com até 8 pessoas em um ambiente inesquecível.</p>
-                    <label for="checkin2">Data de Check-in:</label>
-                    <input type="date" id="checkin2">
-                    <label for="checkout2">Data de Check-out:</label>
-                    <input type="date" id="checkout2">
-                    <label for="hospedesAdicionais2">Hóspedes adicionais:</label>
-                    <input type="number" id="hospedesAdicionais2" min="0" max="4" value="0">
-                    <button
-                        onclick="calcularDiaria('chale2', 'checkin2', 'checkout2', 'resultado2', 'hospedesAdicionais2')">Calcular</button>
-                    <div id="resultado2" class="resultado">Valor à pagar</div>
-                </div>
-            </div>
+        ```
+        <!-- APRESENTAÇÃO -->
+        <section class="contato-intro">
+            <h1>Entre em contato conosco</h1>
+
+            <p>
+                Estamos à disposição para tirar suas dúvidas e ajudar você
+                a planejar uma estadia especial no
+                <strong>Sítio Olho D'Água</strong>.
+            </p>
         </section>
 
-        <section class="directions-section" style="margin-top: 40px;">
-            <!-- Mapa -->
-            <div style="display: flex; gap: 20px; align-items: flex-start;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.8127792457963!2d-44.9477911255617!3d-21.70999399619634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9fd0f2d067548f%3A0x108008fb91a46a95!2sSitio%20Olho%20D&#39;agua!5e0!3m2!1spt-BR!2sbr!4v1722458686084!5m2!1spt-BR!2sbr"
-                    width="300" height="200" style="border:0;" allowfullscreen loading="lazy"></iframe>
-                <div>
-                    <h3>Como Chegar ao Sítio Olho D'Água</h3>
-                    <p>Se você está planejando sua visita ao nosso paraíso em São Thomé das Letras, confira as rotas
-                        recomendadas para facilitar a sua viagem:</p>
-                    <ul>
-                        <li><strong>Partindo de São Paulo:</strong>Pegue a Rodovia Fernão Dias (BR-381) em direção a
-                            Belo Horizonte. Após cerca de 260 km, entre na saída para Três Corações (BR-491). Siga as
-                            indicações para São Thomé das Letras, percorrendo aproximadamente 35 km até o centro da
-                            cidade. De lá, basta seguir as placas para o Sítio Olho D'Água, localizado na Estrada São
-                            Thomé - Sobradinho, Km 6.
 
-                        </li>
-                        <li><strong>Partindo de Belo Horizonte:</strong>Pegue a Rodovia Fernão Dias (BR-381) em direção
-                            a São Paulo. Após cerca de 240 km, entre na saída para Três Corações (BR-491) e siga em
-                            direção a São Thomé das Letras. A partir do centro da cidade, continue pela Estrada São
-                            Thomé - Sobradinho, Km 6, até o Sítio.</li>
-                        <li><strong>Partindo do Rio de Janeiro:</strong>Siga pela Rodovia Presidente Dutra (BR-116) até
-                            Cachoeira Paulista. Depois, pegue a BR-459 em direção a Pouso Alegre. De lá, entre na BR-491
-                            e siga para Três Corações, seguindo as placas para São Thomé das Letras. Do centro, siga até
-                            a Estrada São Thomé - Sobradinho, Km 6.
-                        </li>
-                    </ul>
-                    <p><strong>Dica:</strong>Use o mapa interativo ao lado para traçar sua rota personalizada e
-                        encontrar o melhor caminho até o nosso refúgio natural. Qualquer dúvida, estamos à disposição
-                        para ajudar!</p>
+        <!-- FORMAS DE CONTATO -->
+        <section class="formas-contato">
+
+            <div class="contato-card">
+
+                <h2>Fale conosco</h2>
+
+                <p>
+                    Escolha a melhor forma de falar com a gente.
+                </p>
+
+                <div class="contato-links">
+
+                    <a href="http://wa.me/+5535998524228" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+
+                    <a href="http://www.instagram.com/sitio_olho_daguastl" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+
+                    <a href="mailto:priscilabarbosa1510@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        E-mail
+                    </a>
+
                 </div>
+
             </div>
-            <div id="map" style="height: 300px;"></div>
-            <script>
-                function initMap() {
-                    const sitio = { lat: -21.7225, lng: -45.0045 }; // Coordenadas fictícias
-                    const map = new google.maps.Map(document.getElementById("map"), {
-                        zoom: 15,
-                        center: sitio,
-                    });
-                    new google.maps.Marker({ position: sitio, map: map });
-                }
-            </script>
-            <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+
+            <!-- FORMULÁRIO -->
+            <div class="contato-formulario">
+
+                <h2>Envie uma mensagem</h2>
+
+                <p>
+                    Preencha o formulário e entraremos em contato.
+                </p>
+
+                <form action="https://formsubmit.co/priscilabarbosa1510@gmail.com" method="POST">
+
+                    <input type="hidden" name="_subject" value="Nova mensagem pelo site - Sítio Olho D'Água">
+
+                    <input type="hidden" name="_template" value="table">
+
+                    <input type="hidden" name="_captcha" value="true">
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="name" placeholder="Digite seu nome" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="subject" placeholder="Assunto da mensagem" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="message" rows="6" placeholder="Digite sua mensagem"
+                        required></textarea>
+
+                    <button type="submit" class="botao-enviar">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Enviar mensagem
+                    </button>
+
+                </form>
+
+            </div>
 
         </section>
+
+
+        <!-- LOCALIZAÇÃO -->
+        <section class="localizacao">
+
+            <div class="localizacao-card">
+
+                <div class="localizacao-conteudo">
+
+                    <h2>📍 Onde estamos?</h2>
+
+                    <p>
+                        O Sítio Olho D'Água está localizado no
+                        <strong>Vale do Canta Galo</strong>,
+                        em São Thomé das Letras - MG.
+                    </p>
+
+                    <p>
+                        🌿 Estamos em meio à natureza, em um ambiente tranquilo
+                        e afastado do movimento do centro.
+                    </p>
+
+                    <p>
+                        💧 Aproximadamente
+                        <strong>1 km da Cachoeira da Lua</strong>
+                        e <strong>6 km do centro de São Thomé das Letras</strong>.
+                    </p>
+
+                    <p>
+                        🚗 Estrada São Thomé – Sobradinho, Km 6.
+                    </p>
+
+                </div>
+
+                <div class="localizacao-acao">
+
+                    <a href="https://www.google.com/maps/place/Sitio+Olho+D'agua/@-21.710436,-44.94483,16z"
+                        target="_blank" rel="noopener noreferrer" class="botao-localizacao">
+
+                        📍 Ver localização no mapa
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+        ```
 
     </main>
-
     <footer>
         <p><strong>Localização:</strong> Estrada São Thomé - Sobradinho Km 6, São Thomé das Letras - MG</p>
         <p>© 2025 Sítio Olho D'Água. Todos os direitos reservados.</p>

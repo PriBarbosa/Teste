@@ -18,45 +18,68 @@
     <title>Sitio Olho D'Água</title>
     <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+        integrity="sha512-90VH1Z8CbA7UvKNmP5+lGR4xlU38e1tgkT70d7n4vV67wGWhd466jz9f3cJ9NQsDmO2Z5lRlqYjGQa4K3P8Xg=="
+        crossorigin="anonymous"></script>
+    47
 </head>
 
+
 <body>
-    <header>
 
-        <div class="container">
-            <a class="logo" href="index.html">
-                <img src="../imagens/logo-sitio.jpg" alt="Logotipo do Sítio Olho D'Água" width="110" height="95">
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
 
+    <header class="site-header" aria-label="Cabeçalho do Sítio Olho D'Água">
+
+        <div class="container container-header">
+
+            <a class="logo" href="index.html" aria-label="Página inicial do Sítio Olho D'Água">
+
+                <img src="imagens/logo-sitio.jpg" alt="Logotipo do Sítio Olho D'Água" width="110" height="95">
             </a>
-            <div class="menu">
-                <nav>
-                    <a href="../acomodacoes/acomodacoes.html">Nossas Acomodações</a>
-                    <a href="../contatos/contatos.html">Contatos</a>
-                    <a href="../reserva/reserva.html">Reservas</a>
-                </nav>
-            </div>
-            <div class="sociais">
-                <button><a href="http://wa.me/+5535998524228" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a></button>
-                <button><a href="http://www.instagram.com/sitio_olho_daguastl?igsh=MXg1a2pheG82cTNpdw=="
-                        target=" _blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a></button>
-                <button><a href="mailto:priscilabarbosa1510@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a></button>
 
+            <nav class="menu" aria-label="Menu principal">
 
+                <a href="acomodacoes/acomodacoes.html">
+                    Nossas Acomodações
+                </a>
+
+                <a href="reserva/reserva.html">
+                    Reservas
+                </a>
+
+            </nav>
+
+            <div class="redes-sociais" aria-label="Redes sociais">
+
+                <a class="botao-social" href="http://wa.me/+5535998524228" target="_blank" rel="noopener noreferrer"
+                    aria-label="WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a class="botao-social" href="http://www.instagram.com/sitio_olho_daguastl" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a class="botao-social" href="mailto:priscilabarbosa1510@gmail.com" aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
 
             </div>
 
@@ -64,124 +87,516 @@
 
     </header>
 
-    <main>
-        <div class="aside">
-            <aside>
-                <h2> Dicas de São Thomé </h2>
-                <p> São Thomé das Letras é um destino cheio de encanto, história e aventuras! Desde suas fascinantes
-                    cachoeiras e grutas até tirolesas e misteriosas escrituras rupestres, a cidade oferece atrações para
-                    todos os gostos. Conhecida como um lugar místico, São Thomé também carrega lendas curiosas e
-                    histórias
-                    que vão de mulas sem cabeça até avistamentos de discos voadores. Explore, relaxe e mergulhe na magia
-                    deste paraíso mineiro.
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main class="conteudo" aria-label="Conteúdo principal do Sítio Olho D'Água">
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero">
+
+            <div class="container hero-container">
+
+                <article class="hero-conteudo">
+
+                    <h1>
+                        🌿 Bem-vindo ao Sítio Olho D'Água
+                    </h1>
+
+                    <p class="hero-destaque">
+                        Um refúgio para descansar,
+                        respirar ar puro e viver
+                        a tranquilidade da natureza.
+                    </p>
+
+                    <p>
+                        Aqui você encontra chalés aconchegantes,
+                        paisagens encantadoras e experiências
+                        únicas em meio ao campo.
+                    </p>
+
+                    <div class="hero-botoes">
+
+                        <a href="acomodacoes/acomodacoes.html" class="botao-principal">
+                            Conheça nossas hospedagens
+                        </a>
+
+                        <a href="reserva/reserva.html" class="botao-secundario">
+                            Reserve agora
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             QUEM SOMOS
+        ================================================== -->
+        <section id="sobre" class="sessao sobre">
+
+            <div class="container sobre-container">
+
+                <div class="sobre-imagem">
+                    <img src="imagens/familiaFePri.jpeg"
+                        alt="Foto de Fernando e Priscila, proprietários do Sítio Olho D'Água"
+                        style="display: block; width: 500px; height: 350px; object-fit: cover;">
+                </div>
+
+                <div class="sobre-texto">
+
+                    <h2>🌼 Quem somos</h2>
+
+                    
+                    <p>
+                        Somos Fernando e Priscila, apaixonados pela vida no campo
+                        e pela simplicidade que ela oferece.
+                    </p>
+
+                    <p>
+                        Há mais de oito anos cuidamos do Sítio Olho D'Água com
+                        dedicação e carinho, preservando a natureza e compartilhando
+                        esse espaço especial com pessoas que desejam viver uma
+                        experiência diferente.
+                    </p>
+
+                    <p>
+                        Além da hospedagem, cultivamos hortas, pomares e produzimos
+                        mel e própolis em nosso apiário, sempre respeitando o
+                        equilíbrio da natureza.
+                    </p>
+
+                    <div class="sobre-destaques">
+
+                        <span>🌿 Contato com a natureza</span>
+
+                        <span>🍯 Produção artesanal de mel</span>
+
+                        <span>🏡 Hospedagem acolhedora</span>
+
+                        <span>🌾 Experiência rural</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HOSPEDAGENS
+        ================================================== -->
+
+        <section id="acomodacoes" class="sessao acomodacoes">
+
+            <div class="container">
+
+                <h2>
+                    🏡 Nossas hospedagens
+                </h2>
+
+                <p>
+                    Escolha a acomodação que mais combina com a sua viagem.
+                    Temos opções para casais, famílias e grupos que desejam
+                    aproveitar São Thomé das Letras com conforto e tranquilidade.
                 </p>
+
+
+                <!-- CHALÉS -->
+
+                <div class="row g-4 mt-3">
+
+
+                    <!-- CHALÉ IPÊ AMARELO -->
+
+                    <div class="col-12 col-md-6">
+
+                        <div class="card h-100">
+
+                            <img src="imagens/chale-ipe/chale-ipe-amarelo.png" class="card-img-top"
+                                alt="Chalé Ipê Amarelo">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">
+                                    🌼 Chalé Ipê Amarelo
+                                </h3>
+
+                                <p class="card-text">
+                                    Aconchegante e integrado à natureza,
+                                    o Chalé Ipê Amarelo é ideal para casais
+                                    que procuram tranquilidade, conforto e
+                                    momentos especiais em São Thomé das Letras.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer bg-transparent border-0">
+
+                                <a href="acomodacoes/acomodacoes.html" class="btn btn-primary">
+                                    Conheça o chalé
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CHALÉ QUARESMEIRA -->
+
+                    <div class="col-12 col-md-6">
+
+                        <div class="card h-100">
+
+                            <img src="imagens/chale-quaresmeira/quaresmeir-1.jpg" class="card-img-top"
+                                alt="Chalé Quaresmeira">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">
+                                    🌸 Chalé Quaresmeira
+                                </h3>
+
+                                <p class="card-text">
+                                    Um chalé aconchegante para famílias e
+                                    grupos que desejam aproveitar a natureza
+                                    e a tranquilidade de São Thomé das Letras.
+                                </p>
+
+                                <p class="card-text">
+                                    👥 Ideal para famílias e grupos.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer bg-transparent border-0">
+
+                                <a href="acomodacoes/acomodacoes.html" class="btn btn-primary">
+                                    Conheça o chalé
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     LOCALIZAÇÃO DOS CHALÉS
+                ================================================== -->
+
+                <div class="row mt-4">
+
+                    <div class="col-12">
+
+                        <div class="card">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">
+                                    📍 Localização dos chalés
+                                </h3>
+
+                                <p>
+                                    Nossos chalés estão localizados no
+                                    <strong>Vale do Canta Galo</strong>,
+                                    em uma área tranquila e cercada pela
+                                    natureza, a poucos minutos das principais
+                                    atrações de São Thomé das Letras.
+                                </p>
+
+                                <p>
+                                    🌿 <strong>Vale do Canta Galo</strong> —
+                                    tranquilidade e contato com a natureza.
+                                </p>
+
+                                <p>
+                                    💦 <strong>1 km da Cachoeira da Lua</strong> —
+                                    uma das atrações mais conhecidas da região.
+                                </p>
+
+                                <p>
+                                    🏙️ <strong>6 km do centro de
+                                        São Thomé das Letras</strong> —
+                                    acesso fácil à cidade e aos seus principais
+                                    pontos turísticos.
+                                </p>
+
+                                <p>
+                                    🚗 Uma ótima opção para quem viaja de carro
+                                    e deseja aproveitar a tranquilidade do campo
+                                    sem ficar distante da cidade.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     CASA COM VISTA PARA O PARQUE
+                ================================================== -->
+
+                <div class="row g-4 mt-4">
+
+
+                    <!-- CASA -->
+
+                    <div class="col-12 col-md-6">
+
+                        <div class="card h-100">
+
+                            <img src="imagens/casa-vista/casa-vista.png" class="card-img-top"
+                                alt="Casa com vista para o Parque Antônio Rosa">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">
+                                    🏡 Casa com vista para o parque
+                                </h3>
+
+                                <p class="card-text">
+                                    Uma opção confortável e acolhedora para
+                                    quem deseja aproveitar São Thomé das Letras
+                                    com a praticidade de estar próximo ao centro.
+                                </p>
+
+                                <p class="card-text">
+                                    👥 Ideal para até 2 pessoas.
+                                </p>
+
+                                <p class="card-text">
+                                    📺 TV &nbsp; • &nbsp;
+                                    📶 Wi-Fi &nbsp; • &nbsp;
+                                    🍳 Cozinha completa
+                                </p>
+
+                                <p class="card-text">
+                                    🛏️ Roupa de cama completa.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer bg-transparent border-0">
+
+                                <a href="acomodacoes/acomodacoes.html" class="btn btn-primary">
+                                    Conheça a casa
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOCALIZAÇÃO DA CASA -->
+
+                    <div class="col-12 col-md-6">
+
+                        <div class="card h-100">
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">
+                                    📍 Localização e facilidade de acesso
+                                </h3>
+
+                                <p>
+                                    A casa está localizada próxima ao centro
+                                    de São Thomé das Letras, com uma vista
+                                    privilegiada para o Parque Antônio Rosa.
+                                </p>
+
+                                <p>
+                                    🚌 <strong>Ideal para quem viaja de ônibus:</strong>
+                                    estamos a aproximadamente 5 minutos de
+                                    caminhada da rodoviária, facilitando a chegada
+                                    e a saída dos hóspedes.
+                                </p>
+
+                                <p>
+                                    🚗 Também é uma ótima opção para quem chega
+                                    de BlaBlaCar e prefere ficar em uma localização
+                                    prática, sem depender de carro durante a estadia.
+                                </p>
+
+                                <p>
+                                    🚶 Você estará próximo ao centro, com fácil
+                                    acesso às atrações, restaurantes, lojas e
+                                    demais serviços da cidade.
+                                </p>
+
+                                <div class="localizacao-info">
+
+                                    <p>
+                                        🌳 <strong>Vista para o Parque Antônio Rosa</strong>
+                                    </p>
+
+                                    <p>
+                                        🚶 Próxima ao centro da cidade
+                                    </p>
+
+                                    <p>
+                                        🗺️ Fácil acesso às principais atrações
+                                    </p>
+
+                                    <p>
+                                        🛍️ Próxima a restaurantes, lojas e serviços
+                                    </p>
+
+                                    <p>
+                                        🚗 Não possui estacionamento próprio
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EXPERIÊNCIAS
+        ================================================== -->
+
+        <section id="experiencias" class="sessao experiencias">
+
+            <div class="container">
+
+                <h2>
+                    🌾 Viva a experiência da roça
+                </h2>
+
+                <p>
+                    Aqui você pode viver momentos que muitas pessoas só
+                    conhecem por histórias.
+                </p>
+
+                <p>
+                    Conheça nossa horta, acompanhe a rotina dos animais,
+                    descubra o universo das abelhas sem ferrão e experimente
+                    um pouco da simplicidade da vida rural.
+                </p>
+
+                <p>
+                    São experiências que aproximam adultos e crianças da
+                    natureza e tornam cada hospedagem ainda mais especial.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SÃO THOMÉ DAS LETRAS
+        ================================================== -->
+
+        <section id="sao-thome" class="sessao conhecer-regiao">
+
+            <div class="container">
+
+                <h2>
+                    🌄 Conheça São Thomé das Letras
+                </h2>
+
+                <p>
+                    Hospedar-se no Sítio Olho D'Água também é a oportunidade
+                    de explorar um dos destinos mais encantadores de Minas Gerais.
+                </p>
+
+
+                <!-- VÍDEO -->
+
                 <div class="video-responsive">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3ZjEslUXSNU?si=HBf0t_nbxprz-V2n"
-                        title="YouTube video player" frameborder="0"
+
+                    <iframe src="https://www.youtube.com/embed/3ZjEslUXSNU?si=HBf0t_nbXprz-V2n"
+                        title="Vídeo sobre São Thomé das Letras"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
+
                 </div>
 
-                <img src="../imagens/atracoes/por-do-sol.jpg"
-                    alt="Por do sol com igreja ao fundo em São Thomé das Letras" height="250" width="350">
-                <img src="../imagens/atracoes/cachoeira-da-lua.jpg" alt="Vista da Cachoeira da Lua" width="350"
-                    height="250">
 
-            </aside>
+                <!-- GALERIA -->
 
-            <section>
-                <h2>São Thomé das Letras: Uma Terra de Lendas, Misticismo e Beleza Natural</h2>
-                <p>No coração de Minas Gerais, São Thomé das Letras é muito mais que uma cidade; é um verdadeiro portal
-                    para
-                    o místico e o encantador. Tudo começou no século XVIII, com uma lenda que atravessa gerações: um
-                    escravo
-                    fugitivo foi guiado por um homem misterioso até uma gruta. Lá, encontrou uma carta esculpida em
-                    pedra,
-                    atribuída a São Tomé, o que batizou o lugar com um nome cheio de simbolismo e história.
+                <div class="galeria">
 
-                    Erguida sobre uma serra de quartzito, conhecida como "pedra São Thomé", a cidade deslumbra com suas
-                    paisagens únicas. Mirantes com vistas de tirar o fôlego, cachoeiras cristalinas e grutas repletas de
-                    mistério fazem de São Thomé um paraíso para aventureiros e buscadores de paz interior.
+                    <img src="imagens/atracoes/por-do-sol.jpg"
+                        alt="Pôr do sol com igreja ao fundo em São Thomé das Letras">
 
-                    Com sua forte conexão espiritual, a cidade também é um polo esotérico e cultural, atraindo
-                    visitantes de
-                    todos os cantos em busca de energia renovadora, cultura alternativa e uma experiência única no
-                    Brasil.
-                    Seja para contemplar o pôr do sol, explorar as histórias locais ou vivenciar sua vibe hippie, São
-                    Thomé
-                    das Letras é um convite à magia e ao inesperado.</p>
-                <section class="titulo">
-                    <h1>Sitio Olho D'Água-Cháles por temporada</h1>
-                    <h2>Uma experiência de aconchego e natureza esperando por você.</h2>
-                </section>
-                <section class="primaria">
-                    <h2>Quem somos</h2>
-                    <section class="somos">
-                        <p>Somos Luis Fernando e Priscila, um casal apaixonado pela simplicidade e pelo encanto da vida
-                            no
-                            campo. Há mais de 8 anos, vivemos no Sítio Olho D'Água, um pedaço de terra precioso que
-                            herdamos
-                            dos avós do Fernando. Aqui, transformamos áreas de pastagem em um refúgio ecológico, com
-                            reflorestamento, pomares e hortas orgânicas.
-                            Além de hospedagem, oferecemos experiências únicas, como provar mel e própolis do nosso
-                            pequeno
-                            apiário, conhecer nossos animais e vivenciar o dia a dia no campo. Tudo isso em meio à
-                            natureza
-                            e com todo o carinho mineiro que você merece.</p>
+                    <img src="imagens/atracoes/cachoeira-da-lua.jpg" alt="Vista da Cachoeira da Lua">
 
+                </div>
 
+            </div>
 
-                    </section>
-                </section>
+        </section>
 
-                <section class="secundaria">
-                    <h2>Nossos cháles</h2>
-                    <h3>Viva momentos únicos em nosso chalé</h3>
-                    <section class="chales">
-                        <p>
-                            Localizados no encantador Vale do Canta Galo, nossos chalés foram cuidadosamente projetados
-                            para
-                            oferecer o equilíbrio perfeito entre conforto e simplicidade. Seja para uma escapada
-                            romântica,
-                            momentos em família ou uma viagem em grupo de até 8 pessoas, temos a acomodação ideal para
-                            você.
-                            Cada chalé é equipado com:
-
-                            Roupas de cama macias e aconchegantes;
-                            Cozinha prática e completa para refeições caseiras;
-                            TV e Wi-Fi, para você decidir entre desconectar-se ou manter-se conectado;
-                            A apenas 1 km da encantadora Cachoeira da Lua e a 6 km do centro de São Thomé das Letras,
-                            nossos
-                            chalés oferecem uma experiência única de imersão na natureza. Acorde ao som dos pássaros,
-                            sinta
-                            o frescor do campo e explore as principais atrações da região
-                        </p>
-
-                    </section>
-                </section>
-
-                <section class="experiencia">
-                    <h2>Experiência na Roça</h2>
-                    <p>Viva a autêntica rotina da roça enquanto se hospeda em nossos chalés. Além de relaxar em um
-                        ambiente tranquilo, oferecemos atividades para você se conectar ainda mais com a natureza:
-
-                        Ordenha de vacas e alimentação das galinhas;<br>
-                        Cuidados com a horta orgânica;<br>
-                        Manejo de abelhas sem ferrão, aprendendo sobre meliponicultura. <br>
-                        Cada dia no Sítio Olho D'Água é uma oportunidade de vivenciar a simplicidade e o encanto do
-                        campo, criando memórias únicas e inesquecíveis</p>
-                </section>
-            </section>
-
-        </div>
     </main>
-    <footer>
-        <p><strong>Localização:</strong> Estrada São Thomé - Sobradinho Km 6, São Thomé das Letras - MG</p>
-        <p>© 2025 Sítio Olho D'Água. Todos os direitos reservados.</p>
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            <strong>Localização:</strong>
+            Estrada São Thomé - Sobradinho Km 6,
+            São Thomé das Letras - MG
+        </p>
+
+        <p>
+            © 2025 Sítio Olho D'Água. Todos os direitos reservados.
+        </p>
 
     </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!-- JavaScript do projeto -->
+
     <script src="js/index.js"></script>
+
 </body>
 
 </html>
+```

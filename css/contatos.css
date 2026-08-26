@@ -13,81 +13,191 @@ body {
     font-style: normal;
 }
 
-/* Cabeçalho */
-header {
-    background-color: rgba(2, 102, 19, 0.938);
+/* ========================
+   CABEÇALHO PADRÃO
+======================== */
+
+:root {
+    --altura-header: 130px;
+    --verde-principal: #026613;
+    --azul-principal: #0b1b77;
+    --dourado: #ffd700;
+    --branco: #fff;
+    --sombra: 0 4px 8px rgba(0, 0, 0, .15);
+    --transicao: .3s ease;
+    --borda: 8px;
+}
+
+
+/* ========================
+   BODY
+======================== */
+
+body {
+    background-color: hsla(203, 19%, 87%, 0.897) !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+
+    /* Espaço para o cabeçalho fixo */
+    padding-top: var(--altura-header);
+}
+
+
+/* ========================
+   HEADER
+======================== */
+
+.site-header {
+    background-color: var(--verde-principal);
     width: 100%;
-    height: 120px !important;
-    padding: 20px;
+    height: var(--altura-header);
+    padding: 16px 0;
+
     position: fixed;
     top: 0;
+    left: 0;
+
     z-index: 1000;
 
+    box-shadow: var(--sombra);
 }
 
-/* Formulários e Ações */
-div form .action {
-    display: flex;
-    flex-direction: column;
-}
 
-/* Container principal */
-.container {
-    max-width: 1800px;
-    margin: 0;
-    padding: 0;
+/* ========================
+   CONTAINER DO HEADER
+======================== */
+
+.container-header {
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    padding: 0 30px;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-/* Logo */
-.logo,
-.socias {
-    width: 25%;
+
+/* ========================
+   LOGO
+======================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo img {
-    width: 150px;
-    border-radius: 9px;
-    
+    width: 120px;
+    height: 95px;
+    object-fit: contain;
+    border-radius: var(--borda);
 }
 
-/* Botões de redes sociais */
-.socias button {
+
+/* ========================
+   MENU
+======================== */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    margin-left: 40px;
+    margin-right: auto;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.menu a {
+    padding: 10px 0;
+
+    color: var(--branco);
+    text-decoration: none;
+
+    position: relative;
+
+    height: auto;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+
+/* Linha dourada */
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--dourado);
+
+    transition: var(--transicao);
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+/* ========================
+   REDES SOCIAIS
+======================== */
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-left: 30px;
+}
+
+
+/* ========================
+   BOTÕES SOCIAIS
+======================== */
+
+.botao-social {
     width: 45px;
     height: 45px;
-    background-image: linear-gradient(45deg, #0b1b77, #0b17b966);
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    margin-right: 10px;
-}
 
-.socias button i {
-    font-size: 20px;
-    color: #ffffff;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.socias button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    border-radius: var(--borda);
 
-.socias button i:hover {
-    color: #ffd700;
-    /* Destaque dourado ao ícone */
-}
+    background: linear-gradient(45deg,
+            var(--verde-principal),
+            var(--azul-principal));
 
-/* Navegação */
-.menu {
-    width: 50%;
-}
-
-.menu nav a {
-    color: #ffffff;
+    color: var(--branco);
     text-decoration: none;
-    padding: 40px;
+
+    transition: var(--transicao);
+}
+
+.botao-social i {
+    font-size: 20px;
+    color: var(--branco);
+}
+
+.botao-social:hover {
+    transform: scale(1.1);
+    box-shadow: var(--sombra);
+}
+
+.botao-social:hover i {
+    color: var(--dourado);
 }
 
 /* Seções principais */

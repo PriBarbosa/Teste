@@ -1,204 +1,407 @@
+
+/* =========================================================
+   RESERVA.CSS
+   Sítio Olho D'Água
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 
-.container {
-    max-width: 1800px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+/* =========================================================
+   VARIÁVEIS
+   ========================================================= */
 
+:root {
+    --altura-header: 130px;
+    --verde-principal: #026613;
+    --azul-principal: #0b1b77;
+    --dourado: #ffd700;
+    --branco: #fff;
+    --texto: #333;
+    --texto-secundario: #555;
+    --borda: 8px;
+    --sombra: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --transicao: 0.3s ease;
 }
 
-header {
-    background-color: rgba(2, 102, 19, 0.938);
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+    background-color: hsla(203, 19%, 87%, 0.897);
+    font-family: 'Poppins', sans-serif;
+    color: var(--verde-principal);
+    padding-top: var(--altura-header);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--texto);
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
     width: 100%;
-    height: 120;
-    padding: 10px 20px;
-    position: relative;
+    height: var(--altura-header);
+    padding: 16px 0;
+    background-color: var(--verde-principal);
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
-    
+    box-shadow: var(--sombra);
 }
+
+
+/* =========================================================
+   CONTAINER DO HEADER
+   ========================================================= */
+
+.container-header {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
 
 .logo {
-    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo img {
-    width: 150px;
-    height: 100px;
-    border-radius: 9px;
-
+    width: 120px;
+    height: 95px;
+    object-fit: contain;
+    border-radius: var(--borda);
 }
 
 
-.titulo {
+/* =========================================================
+   MENU
+   ========================================================= */
+
+.menu {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: nowrap;
+    align-items: center;
+    gap: 35px;
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+.menu a {
+    position: relative;
+    padding: 10px 0;
+    color: var(--branco);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+/* Linha dourada ao passar o mouse */
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--dourado);
+    transition: var(--transicao);
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   REDES SOCIAIS
+   ========================================================= */
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+
+/* =========================================================
+   BOTÕES SOCIAIS
+   ========================================================= */
+
+.botao-social {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: var(--borda);
+
+    background: linear-gradient(45deg,
+            var(--verde-principal),
+            var(--azul-principal));
+
+    color: var(--branco);
+    text-decoration: none;
+
+    transition: var(--transicao);
+}
+
+.botao-social i {
+    font-size: 20px;
+    color: var(--branco);
+}
+
+.botao-social:hover {
+    transform: scale(1.1);
+    box-shadow: var(--sombra);
+}
+
+.botao-social:hover i {
+    color: var(--dourado);
+}
+
+
+/* =========================================================
+   ÁREA DE RESERVAS
+   ========================================================= */
+
+.reserva {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 50px auto;
+    padding: 0 30px;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 
-.socias {
+/* =========================================================
+   INTRODUÇÃO
+   ========================================================= */
+
+.inicio {
+    width: 100%;
+    max-width: 1000px;
+
+    padding: 30px;
+    margin-bottom: 30px;
+
+    background-color: var(--branco);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+
+    text-align: center;
+}
+
+.inicio h1 {
+    margin-bottom: 20px;
+    color: var(--verde-principal);
+}
+
+.inicio p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.inicio p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CARDS DAS HOSPEDAGENS
+   ========================================================= */
+
+.cards-hospedagens {
+    width: 100%;
+
     display: flex;
-    gap: 10px;
-    /* Espaçamento entre os botões sociais */
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.socias button {
-    width: 45px;
-    height: 45px;
-    background-image: linear-gradient(45deg, #0b1b77, #0b17b966);
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    margin-right: 10px;
-}
 
-.socias button i {
-    font-size: 20px;
-    color: #ffffff;
-}
+/* =========================================================
+   CARD
+   ========================================================= */
 
-.socias button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.socias button i:hover {
-    color: #ffd700;
-    /* Destaque dourado ao ícone */
-}
-
-.menu {
-    width: 50%;
-}
-
-.menu nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 40px;
-
-}
-
-.reserva {
-    display: flex;
-    margin: 50px;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: space-around;
-    box-sizing: border-box;
-
-}
-
-.inicio,
-.card {
-    width: 33%;
-}
-
-.card {
+.cards-hospedagens .card {
     width: 18rem;
-    margin: 20px auto;
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: var(--borda);
+
+    box-shadow: var(--sombra);
+    overflow: hidden;
 }
 
-.card img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+
+/* =========================================================
+   IMAGEM DO CARD
+   ========================================================= */
+
+.cards-hospedagens .card-img-top {
+    width: 100%;
+    height: 180px;
+
     object-fit: cover;
 }
 
-.card-body {
+
+/* =========================================================
+   CONTEÚDO DO CARD
+   ========================================================= */
+
+.cards-hospedagens .card-body {
     padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .card-title {
     font-size: 1.5rem;
-    color: rgba(2, 102, 19, 0.938);
+    color: var(--verde-principal);
     margin-bottom: 10px;
 }
 
 .card-text {
     font-size: 1rem;
-    color: #555;
+    color: var(--texto-secundario);
     margin-bottom: 15px;
-}
-
-.btn-primary {
-    background-color: rgba(2, 102, 19, 0.938);
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    text-align: center;
-}
-
-.btn-primary:hover {
-    background-color: #ffd700;
-    color: #333;
-}
-
-
-body {
-
-    background-color: hsla(203, 19%, 87%, 0.897) !important;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    color: rgba(2, 102, 19, 0.938) !important;
-    /* Espaço equivalente à altura do cabeçalho */
-
-
-    /* Evite usar "italic" em todo o texto, reserve para destaques */
-
-}
-
-p {
-    font-size: 1rem;
-    color: #333;
     line-height: 1.5;
 }
 
+
+/* =========================================================
+   BOTÃO RESERVAR
+   ========================================================= */
+
+.cards-hospedagens .btn-primary {
+    align-self: flex-start;
+    margin-top: auto;
+
+    padding: 10px 15px;
+
+    background-color: var(--verde-principal);
+    border: none;
+
+    color: var(--branco);
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: var(--transicao);
+}
+
+.cards-hospedagens .btn-primary:hover {
+    background-color: var(--dourado);
+    color: var(--texto);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
 footer {
-    background-color: rgba(2, 102, 19, 0.938);
-    color: white;
+    background-color: var(--verde-principal);
+    color: var(--branco);
+
     padding: 15px;
+
     font-size: 14px;
     text-align: center;
-
 }
 
 footer p {
-    color: white;
-    text-decoration:none;
+    color: var(--branco);
 }
 
 footer p:hover {
-    color: #ffd700;
+    color: var(--dourado);
 }
 
 
-@media (max-width: 600px) {
-    body {
-        background-color: red !important;
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
 
+@media (max-width: 768px) {
+
+    .cards-hospedagens {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .reserva {
-        flex-direction: column;
+    .cards-hospedagens .card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .inicio {
+        padding: 25px 20px;
+    }
+
+    .inicio h1 {
+        font-size: 1.8rem;
+    }
+
+    .container-header {
+        padding: 0 20px;
+    }
+
+    .menu {
+        gap: 20px;
+        margin-left: 20px;
+    }
+
+    .redes-sociais {
+        margin-left: 15px;
     }
 }
